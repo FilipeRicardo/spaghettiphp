@@ -1,7 +1,7 @@
 <?php
 
-require 'lib/core/view/Helper.php';
-require 'lib/core/view/Exceptions.php';
+require 'lib/spaghetti/view/Helper.php';
+require 'lib/spaghetti/view/Exceptions.php';
 
 class View {
     public $pageTitle;

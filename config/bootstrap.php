@@ -1,34 +1,34 @@
 <?php
 
 // defines the root directory
-define('SPAGHETTI_ROOT', dirname(dirname(__FILE__)));
+define('SPAGHETTI_ROOT', dirname(__DIR__));
 
 // adds the root directory to the include path
 set_include_path(SPAGHETTI_ROOT . PATH_SEPARATOR . get_include_path());
 
-// includes core.common
-require 'lib/core/common/Config.php';
-require 'lib/core/common/Inflector.php';
-require 'lib/core/common/Utils.php';
-require 'lib/core/common/String.php';
-require 'lib/core/common/Filesystem.php';
-require 'lib/core/common/Hookable.php';
+// includes spaghetti.common
+require 'lib/spaghetti/common/Config.php';
+require 'lib/spaghetti/common/Inflector.php';
+require 'lib/spaghetti/common/Utils.php';
+require 'lib/spaghetti/common/String.php';
+require 'lib/spaghetti/common/Filesystem.php';
+require 'lib/spaghetti/common/Hookable.php';
 
-// includes and initializes core.debug
-require 'lib/core/debug/Debug.php';
+// includes and initializes spaghetti.debug
+require 'lib/spaghetti/debug/Debug.php';
 
-// includes core.dispatcher
-require 'lib/core/dispatcher/Dispatcher.php';
-require 'lib/core/dispatcher/Mapper.php';
+// includes spaghetti.dispatcher
+require 'lib/spaghetti/dispatcher/Dispatcher.php';
+require 'lib/spaghetti/dispatcher/Mapper.php';
 
-// includes core.model
-require 'lib/core/model/Model.php';
+// includes spaghetti.model
+require 'lib/spaghetti/model/Model.php';
 
-// includes core.controller
-require 'lib/core/controller/Controller.php';
+// includes spaghetti.controller
+require 'lib/spaghetti/controller/Controller.php';
 
-// includes core.view
-require 'lib/core/view/View.php';
+// includes spaghetti.view
+require 'lib/spaghetti/view/View.php';
 
 // includes application's files
 require 'app/controllers/app_controller.php';

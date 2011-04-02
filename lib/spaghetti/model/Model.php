@@ -1,9 +1,9 @@
 <?php
 
-require 'lib/core/common/Validation.php';
-require 'lib/core/model/Connection.php';
-require 'lib/core/model/Table.php';
-require 'lib/core/model/Behavior.php';
+require 'lib/spaghetti/common/Validation.php';
+require 'lib/spaghetti/model/Connection.php';
+require 'lib/spaghetti/model/Table.php';
+require 'lib/spaghetti/model/Behavior.php';
 
 class Model extends Hookable {
     protected $behaviors = array();

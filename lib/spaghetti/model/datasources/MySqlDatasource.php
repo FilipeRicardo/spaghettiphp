@@ -1,6 +1,6 @@
 <?php
 
-require_once 'lib/core/model/datasources/PdoDatasource.php';
+require_once 'lib/spaghetti/model/datasources/PdoDatasource.php';
 
 class MySqlDatasource extends PdoDatasource {
     public function connect($dsn = null, $username = null, $password = null) {

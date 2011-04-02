@@ -1,6 +1,6 @@
 <?php
 
-require 'lib/core/controller/Exceptions.php';
+require 'lib/spaghetti/controller/Exceptions.php';
 
 /*
     Class: Controller

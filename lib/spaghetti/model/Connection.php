@@ -1,6 +1,6 @@
 <?php
 
-require 'lib/core/model/datasources/Datasource.php';
+require 'lib/spaghetti/model/datasources/Datasource.php';
 
 class Connection {
     protected $config = array();
@@ -49,7 +49,7 @@ class Connection {
     public static function create($config) {
         $datasource = $config['driver'] . 'Datasource';
         if(!class_exists($datasource)) {
-            require 'lib/core/model/datasources/' . $datasource . '.php';
+            require 'lib/spaghetti/model/datasources/' . $datasource . '.php';
         }
 
         return new $datasource($config);
